@@ -1,0 +1,117 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    background-color: #4c89af;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Wll lift the button in y direction */
+button:hover{
+    background-color: #305879;
+    transform: translateY(-2px);
+}
+/* Bring button to its normal position */
+button:active {
+    transform: translateY(0);
+}
+
+#formContainer {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+#newform label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+#newform input[type="text"],
+#newform input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+#newform input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+#newform button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+#libraryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:20px;
+    border: 1px solid #aeabab;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+   transition: transform 0.2s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+.book h3{
+    color: #22394f;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.book p{
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #775c5c;
+}
+.book button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #3ce747;
+}
